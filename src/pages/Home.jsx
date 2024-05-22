@@ -29,7 +29,7 @@ const Home = () => {
   const token = localStorage.getItem("clientToken");
   const getBioProfile = async () => {
     try {
-      const request = await fetch("http://localhost:5780/api/v1/users", {
+      const request = await fetch("https://em-server-3xek.onrender.com//api/v1/users", {
         headers: {
           "Content-type": "application/json",
           Authorization: `Bearer ${token}`,

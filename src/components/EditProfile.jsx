@@ -57,7 +57,7 @@ function EditProfile(props) {
       formData.append("profilePhoto", selectedFile);
     }
     try {
-      const response =await fetch("http://localhost:5780/api/v1/users/update-profile",{
+      const response =await fetch("https://em-server-3xek.onrender.com//api/v1/users/update-profile",{
         method:"PATCH",
         body:formData,
         headers:{
@@ -78,7 +78,7 @@ function EditProfile(props) {
   const navigate =useNavigate();
 const getBioProfile =async()=>{
   try {
-    const request =await fetch("http://localhost:5780/api/v1/users",{
+    const request =await fetch("https://em-server-3xek.onrender.com//api/v1/users",{
       headers:{
         "Content-type":"application/json",
         Authorization:`Bearer ${token}`

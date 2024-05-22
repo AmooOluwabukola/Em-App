@@ -12,7 +12,7 @@ const Community = () => {
 
     const [data, setData] = useState([]);
     const getUsers= async () =>{
-        const request = await fetch("http://localhost:5780/api/v1/users/all");
+        const request = await fetch("https://em-server-3xek.onrender.com//api/v1/users/all");
         const response = await request.json();
         console.log(response.users);
         setData(response.users)

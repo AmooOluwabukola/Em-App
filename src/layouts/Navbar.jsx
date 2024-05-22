@@ -30,7 +30,7 @@ const Navbar = () => {
 
   const getBioProfile = async ()=>{
     try {
-      const request = await fetch("http://localhost:5780/api/v1/users",{
+      const request = await fetch("https://em-server-3xek.onrender.com//api/v1/users",{
         headers:{
           "Content-type":"application/json",
           Authorization:`Bearer ${token}`
@@ -50,7 +50,7 @@ const Navbar = () => {
       if (term) {
         try {
           const request = await fetch(
-           ` http://localhost:5780/api/v1/users/search?searchTerm=${term}`,
+           ` https://em-server-3xek.onrender.com//api/v1/users/search?searchTerm=${term}`,
             {
               headers: {
                 "Content-type": "application/json",
