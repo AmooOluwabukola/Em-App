@@ -1,0 +1,22 @@
+/* .custom-file-input{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.custom-file-input ::before{
+    content: "Choose File";
+    display: inline;
+    background-color: blue;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.custom-file-input file-control[type= "file"]{
+ position:absolute;
+ font-size: 100px;
+ right: 0;
+ top: 0;
+ opacity: 0;
+ cursor: pointer;
+} */
